@@ -1,0 +1,9 @@
+# Render.com Blueprint — free web service.
+# Push this repo to GitHub, then on Render: New > Blueprint > pick the repo.
+services:
+  - type: web
+    name: daily-procurement
+    runtime: docker
+    plan: free
+    dockerfilePath: ./Dockerfile
+    # Render sets PORT automatically; the app reads it. No extra config needed.
